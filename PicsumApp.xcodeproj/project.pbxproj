@@ -7,23 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CC89F70E2650AA6D004B7D38 /* ImageDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC89F70D2650AA6D004B7D38 /* ImageDetailViewController.swift */; };
 		CC9C175A26507C01000C1A7F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9C175926507C01000C1A7F /* AppDelegate.swift */; };
 		CC9C175C26507C01000C1A7F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9C175B26507C01000C1A7F /* SceneDelegate.swift */; };
-		CC9C175E26507C01000C1A7F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9C175D26507C01000C1A7F /* ViewController.swift */; };
+		CC9C175E26507C01000C1A7F /* ImageListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9C175D26507C01000C1A7F /* ImageListViewController.swift */; };
 		CC9C176126507C01000C1A7F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC9C175F26507C01000C1A7F /* Main.storyboard */; };
 		CC9C176326507C01000C1A7F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC9C176226507C01000C1A7F /* Assets.xcassets */; };
 		CC9C176626507C01000C1A7F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC9C176426507C01000C1A7F /* LaunchScreen.storyboard */; };
+		CC9C177526507D2A000C1A7F /* ImageHttpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9C177426507D2A000C1A7F /* ImageHttpController.swift */; };
+		CC9C177926507D9D000C1A7F /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9C177826507D9D000C1A7F /* Image.swift */; };
+		CC9C177D26508103000C1A7F /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9C177C26508103000C1A7F /* ImageCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CC89F70D2650AA6D004B7D38 /* ImageDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDetailViewController.swift; sourceTree = "<group>"; };
 		CC9C175626507C01000C1A7F /* PicsumApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PicsumApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC9C175926507C01000C1A7F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CC9C175B26507C01000C1A7F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CC9C175D26507C01000C1A7F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CC9C175D26507C01000C1A7F /* ImageListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageListViewController.swift; sourceTree = "<group>"; };
 		CC9C176026507C01000C1A7F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CC9C176226507C01000C1A7F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CC9C176526507C01000C1A7F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CC9C176726507C01000C1A7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC9C177426507D2A000C1A7F /* ImageHttpController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageHttpController.swift; sourceTree = "<group>"; };
+		CC9C177826507D9D000C1A7F /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
+		CC9C177C26508103000C1A7F /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +66,41 @@
 			children = (
 				CC9C175926507C01000C1A7F /* AppDelegate.swift */,
 				CC9C175B26507C01000C1A7F /* SceneDelegate.swift */,
-				CC9C175D26507C01000C1A7F /* ViewController.swift */,
-				CC9C175F26507C01000C1A7F /* Main.storyboard */,
+				CC9C176F26507CFC000C1A7F /* Controller */,
+				CC9C177226507D0B000C1A7F /* View */,
+				CC9C177326507D14000C1A7F /* Model */,
 				CC9C176226507C01000C1A7F /* Assets.xcassets */,
 				CC9C176426507C01000C1A7F /* LaunchScreen.storyboard */,
 				CC9C176726507C01000C1A7F /* Info.plist */,
 			);
 			path = PicsumApp;
+			sourceTree = "<group>";
+		};
+		CC9C176F26507CFC000C1A7F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CC9C175D26507C01000C1A7F /* ImageListViewController.swift */,
+				CC89F70D2650AA6D004B7D38 /* ImageDetailViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		CC9C177226507D0B000C1A7F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CC9C175F26507C01000C1A7F /* Main.storyboard */,
+				CC9C177C26508103000C1A7F /* ImageCollectionViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CC9C177326507D14000C1A7F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CC9C177426507D2A000C1A7F /* ImageHttpController.swift */,
+				CC9C177826507D9D000C1A7F /* Image.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,9 +173,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CC9C175E26507C01000C1A7F /* ViewController.swift in Sources */,
+				CC9C177D26508103000C1A7F /* ImageCollectionViewCell.swift in Sources */,
+				CC9C175E26507C01000C1A7F /* ImageListViewController.swift in Sources */,
+				CC89F70E2650AA6D004B7D38 /* ImageDetailViewController.swift in Sources */,
 				CC9C175A26507C01000C1A7F /* AppDelegate.swift in Sources */,
 				CC9C175C26507C01000C1A7F /* SceneDelegate.swift in Sources */,
+				CC9C177526507D2A000C1A7F /* ImageHttpController.swift in Sources */,
+				CC9C177926507D9D000C1A7F /* Image.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
